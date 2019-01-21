@@ -1,0 +1,11 @@
+ [{
+  "name": "production",
+  "appid": "725e8997-7bac-433e-8052-2822e71c73b6",
+  "accesstoken": "wa6rpxygjjuhz4anw8ygvqp8",
+  "marketing_cloud_server_url": "https://mcyx4z50nqqxhjj8ml-988q9t2w4.device.marketingcloudapis.com/",
+  "mid": "7276250",
+  "etanalytics": false,
+  "pianalytics": false,
+  "location": false,
+  "inbox": false
+  }]
