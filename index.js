@@ -1,9 +1,12 @@
 
 import { NativeModules } from 'react-native';
-console.log("RNMarketingCloud", NativeModules)
 
 const { RNMarketingCloud } = NativeModules;
 
-console.log("RNMarketingCloud", RNMarketingCloud)
 
-export default RNMarketingCloud;
+module.exports = {
+    init: () => RNMarketingCloud.initializeSDK(),
+    register:() => RNMarketingCloud.registerForNotifications(),
+    setContactKey:(contactKey) => RNMarketingCloud.setContactKey(contactKey),
+    setDeviceToken:(token) => RNMarketingCloud.setDeviceToken(token)
+};
