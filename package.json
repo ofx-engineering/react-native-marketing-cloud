@@ -1,6 +1,6 @@
 
 {
-  "name": "react-native-marketing-cloud",
+  "name": "@ofx/react-native-marketing-cloud",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
