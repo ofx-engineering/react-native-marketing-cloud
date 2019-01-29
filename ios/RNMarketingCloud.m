@@ -21,7 +21,9 @@ RCT_REMAP_METHOD(setContactKey,
     if(returnValue){
         resolve(@"true");
     }
-    resolve(@"false");
+    else {
+        resolve(@"false");
+    }
 }
 
 RCT_REMAP_METHOD(setTag,
@@ -35,7 +37,9 @@ RCT_REMAP_METHOD(setTag,
     if(returnValue){
         resolve([[MarketingCloudSDK sharedInstance] sfmc_tags]);
     }
-    resolve(@"false");
+    else {
+        resolve(@"false");
+    }
 }
 
 RCT_REMAP_METHOD(removeTag,
@@ -49,7 +53,9 @@ RCT_REMAP_METHOD(removeTag,
     if(returnValue){
          resolve([[MarketingCloudSDK sharedInstance] sfmc_tags]);
     }
-    resolve(@"false");
+    else {
+        resolve(@"false");
+    }
 }
 
 
@@ -64,7 +70,9 @@ RCT_REMAP_METHOD(setAttributeNamed,
     if(returnValue){
         resolve([[MarketingCloudSDK sharedInstance] sfmc_attributes]);
     }
-    resolve(@"false");
+    else {
+        resolve(@"false");
+    }
 }
 
 RCT_REMAP_METHOD(removeAttributeNamed,
@@ -77,7 +85,9 @@ RCT_REMAP_METHOD(removeAttributeNamed,
     if(returnValue){
          resolve([[MarketingCloudSDK sharedInstance] sfmc_attributes]);
     }
-    resolve(@"false");
+    else {
+        resolve(@"false");
+    }
 }
 
 

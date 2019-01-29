@@ -42,6 +42,16 @@ And in the *didRegisterForRemoteNotificationsWithDeviceToken*  do
 
 #### Android
 
+##### pre setup
+
+
+Implement the SDK as per the steps here
+
+https://salesforce-marketingcloud.github.io/JB4A-SDK-Android/sdk-implementation/implement-sdk-google.html
+
+
+##### Library Setup
+
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
   - Add `import com.reactlibrary.RNMarketingCloudPackage;` to the imports at the top of the file
   - Add `new RNMarketingCloudPackage()` to the list returned by the `getPackages()` method
@@ -61,7 +71,14 @@ And in the *didRegisterForRemoteNotificationsWithDeviceToken*  do
 ```javascript
 import RNMarketingCloud from 'react-native-marketing-cloud';
 
-// TODO: What to do with the module?
-RNMarketingCloud;
+setContactKey: sets the contact key
+
+setTag: sets the Tag returns existing tags
+
+removeTag: removes a tag , returns existing tags
+
+setAttributeNamed: set a key value pair attributes, returns all attributes
+
+removeAttributeNamed: removes a key from attributes, returns all attributes
 ```
   
