@@ -33,7 +33,7 @@ RCT_REMAP_METHOD(setTag,
     bool returnValue = [[MarketingCloudSDK sharedInstance] sfmc_addTag:tag];
     
     if(returnValue){
-        resolve(@"true");
+        resolve([[MarketingCloudSDK sharedInstance] sfmc_tags]);
     }
     resolve(@"false");
 }
@@ -47,7 +47,7 @@ RCT_REMAP_METHOD(removeTag,
     bool returnValue = [[MarketingCloudSDK sharedInstance] sfmc_removeTag:tag];
     
     if(returnValue){
-        resolve(@"true");
+         resolve([[MarketingCloudSDK sharedInstance] sfmc_tags]);
     }
     resolve(@"false");
 }
@@ -62,7 +62,7 @@ RCT_REMAP_METHOD(setAttributeNamed,
     
     bool returnValue = [[MarketingCloudSDK sharedInstance] sfmc_setAttributeNamed:name value:value];
     if(returnValue){
-        resolve(@"true");
+        resolve([[MarketingCloudSDK sharedInstance] sfmc_attributes]);
     }
     resolve(@"false");
 }
@@ -75,7 +75,7 @@ RCT_REMAP_METHOD(removeAttributeNamed,
     
     bool returnValue = [[MarketingCloudSDK sharedInstance] sfmc_clearAttributeNamed:name];
     if(returnValue){
-        resolve(@"true");
+         resolve([[MarketingCloudSDK sharedInstance] sfmc_attributes]);
     }
     resolve(@"false");
 }
